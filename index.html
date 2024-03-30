@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRubo Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+    <header>
+        <h1 class="text-c p-y-20 ">I<i class="fa-solid fa-heart"></i>Rubo <span class="change-title-name pointer" onclick="cambiaTitolo()">Shop</span><i class="fa-solid fa-hand-point-left"></i></h1>
+    </header>
+    <main class="container">
+        <h2 class="text-c p-y-20">I più rubati</h2>
+
+        <table>
+            <thead class="text-c">
+                <td>Foto</td>
+                <td>Info</td>
+                <td>Link</td>
+                <td><h4>Lascia un commento</h4></td>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="https://m.media-amazon.com/images/I/61eEYLATF9L.__AC_SY445_SX342_QL70_ML2_.jpg" width="100px" alt="immagine prodotto"></td>
+                    <td>
+                        <div class="info-wrapper">
+                            <h3 class="product-name">Iphone 15</h3>
+                            <p class="product-description">Descrizione prodotto</p>
+                            <p class="product-price">100€</p>
+                        </div>
+                    </td>
+                    <td><a href="https://www.amazon.it/Apple-iPhone-15-128-GB/dp/B0CHWV5HTM/ref=sr_1_1_sspa?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=BFP7PMM5TQBD&dib=eyJ2IjoiMSJ9.CvsSXsjQKmucovDsAhOdynqqw2P8ajP5Z8qBLzZ_SV2FhKwsyLXtW5ZBPmnrOR39IxmuRpMb-Q0Pq2miDr7U31IqCzEL_dtoSKy71Lv3XfEoXN0Upk5QQdok5dtYRRLmnTw3RBqmwxlO86fLFEwMrLYUW481zyqubBrh5VCXgs3xjqB-yLtrwP628sbdRaDrhCyiOFuZzcYZq8k5QSZqRWcCq2uSKvX8SgBGXc5Lx4T3JQjIEkAFD_RdATastS87k4gBIecwop-iJX3X0Wben0jr1h6qAGQwwfofhz3zvmo.hokuPoNrSgRcPVQHBAmyDPSvtE83srfJPthNdS9ed7M&dib_tag=se&keywords=iphone+15&qid=1711807023&sprefix=ihopne+15%2Caps%2C133&sr=8-1-spons&ufe=app_do%3Aamzn1.fos.9d4f9b77-768c-4a4e-94ad-33674c20ab35&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1" class="product-price" target="_blank">Acquista</a></td>
+                    <td>
+                        <input type="text" class="p-10">
+                        <button type="button" class="p-10">Invia</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://m.media-amazon.com/images/I/61cwywLZR-L._AC_SL1500_.jpg" width="100px" alt="immagine prodotto"></td>
+                    <td>
+                        <div class="info-wrapper">
+                            <h3 class="product-name">Iphone 14</h3>
+                            <p class="product-description">Descrizione prodotto</p>
+                            <p class="product-price">100€</p>
+                        </div> 
+                    </td>
+                    <td><a href="https://www.amazon.it/dp/B0BDKJ9WRK" class="product-price" target="_blank">Acquista</a></td>
+                    <td>
+                        <input type="text" class="p-10">
+                        <button type="button" class="p-10">Invia</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://m.media-amazon.com/images/I/71iIaQjJunL._AC_SL1500_.jpg  " width="100px" alt="immagine prodotto"></td>
+                    <td>
+                        <div class="info-wrapper">
+                            <h3 class="product-name">Iphone 13</h3>
+                            <p class="product-description">Descrizione prodotto</p>
+                            <p class="product-price">100€</p>
+                        </div>
+                    </td>
+                    <td><a href="https://www.amazon.it/Apple-iPhone-13-128-GB/dp/B09G98QYSD/ref=sr_1_6?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=HU7CI793805G&dib=eyJ2IjoiMSJ9.Me_1EF3dnKIQAs9zFHxb1aWfpCKmvTux7pT_9892XY-g9YeCbn1mhzCvTVHyTIDSK3BbWvOTE-uO1ZG3WFJWQPxViqHFCCQm8A2unWGyxYf43OCgYwRVtFuvRESIENXvHtIyJ3vkV1soSEx_-r9yG5vF3LazLbjOO2bb4Ix1T4BXWP7vHxZ_XAveDru0bi4-KBI76pgSJ5riHLd_eH2FYzIR5r1751PKrrqB960Ja5o9ZK4NJbeiOlYIzBejdQQreujPNWsINKLtxf_LjVECz4XqmSnxjrr4Zg65epQAuq0.DVEMSuNXSITcqeECoiuHZqeTxvOe2kFy0HCyTarhq-Y&dib_tag=se&keywords=iphone+13&qid=1711807088&sprefix=ihpne+13%2Caps%2C119&sr=8-6&ufe=app_do%3Aamzn1.fos.9d4f9b77-768c-4a4e-94ad-33674c20ab35" class="product-price" target="_blank">Acquista</a></td>
+                    <td>
+                        <input type="text" class="p-10">
+                        <button type="button" class="p-10">Invia</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://m.media-amazon.com/images/I/61DreMaVplL._AC_SL1500_.jpg" width="100px" alt="immagine prodotto"></td>
+                    <td>
+                        <div class="info-wrapper">
+                            <h3 class="product-name">Iphone 12</h3>
+                            <p class="product-description">Descrizione prodotto</p>
+                            <p class="product-price">100€</p>
+                        </div>
+                    <td><a href="https://www.amazon.it/Apple-iPhone-Pro-128GB-Ricondizionato/dp/B08PCB8QCV/ref=sr_1_6?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=28FAOTC1JEARZ&dib=eyJ2IjoiMSJ9.MjKsATrQP4bo8cFUgNcF0aR_z7FSep0uhrzuq-UvOD7YlUF0k4vPEi-jIym1roL7UbfJLfp9Sl7UR-Hx8ZvkVgQs07dhC0_wu71CeIx1aF7Iu6oUg9fXm7CKG2cmpku55NyLH0GJ9JUlF1YHQD2oEE16KZ8VOPdXBH-0jMAb1o0qN8e3-fYBSD3zgOP3E7eFCt8aockjKg7kAfIRadKa92-hyop8Lqk92HnoQP2-GnLPzZ9O6npoejthWSM9J9TD5YyEFGsPofG2f1e8j7lC89r5NTvUrxsKSagYXeqiXJ8.vi76WBzu0VhcHdopqM1rghCDnw1IXP08jqLxRdNShFI&dib_tag=se&keywords=iphone+12&qid=1711807106&sprefix=iphone+1%2Caps%2C119&sr=8-6" class="product-price" target="_blank">Acquista</a></td>
+                    <td>
+                        <input type="text" class="p-10">
+                        <button type="button" class="p-10">Invia</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="https://m.media-amazon.com/images/I/713WI7OKngL._AC_SL1500_.jpg" width="100px" alt="immagine prodotto"></td>
+                    <td>
+                        <div class="info-wrapper">
+                            <h3 class="product-name">Iphone 11</h3>
+                            <p class="product-description">Descrizione prodotto</p>
+                            <p class="product-price">100€</p>
+                        </div>
+                    </td>
+                    <td><a href="https://www.amazon.it/Apple-iPhone-64GB-Rosso-Ricondizionato/dp/B082DN7RVM/ref=sr_1_6?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3C9HG751KZKTE&dib=eyJ2IjoiMSJ9.r5PApyFBJ0o5kQcVuH0STcO9yD3YsiKxb7X2StsPCg30JsIG20KlcR9YX4gFIsj0alk7UUwCSonJJtzl6zxCpoB56lx5OQ5FXjLdxNwjnr1iuygXKQ8CSMfCN-UmjPiOyhpgckimM-FcTxfaf8thlMHC0Cp0_g_znDLMJ97LXYkmPWmRucvOZaHB92jXpEPlTCnz-9iwnVsU9hw56JnwqoLV-n2aQGaiYqL-70_VJ04lyPDq1t3p4_wC-iC5SZkleuPFXTgyIayp8VePv5ezFFlOzIWLprX9PmZJi1tePFM.6utzQhN_acjcxmi_k0lhz_aNLY3SHvnNDvP4Cb9YWfg&dib_tag=se&keywords=iphone+11&qid=1711807141&sprefix=iphone+1%2Caps%2C127&sr=8-6" class="product-price" target="_blank">Acquista</a></td>
+                    <td>
+                        <input type="text" class="p-10">
+                        <button type="button" class="p-10">Invia</button>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+        <div class="btn-wrapper">
+            <button class="trigger" onclick="cambiaSfondo()" >Cambia sfondo</button>
+            <button class="trigger" onclick="aggiungiClasse()" >Aggiungi classe</button>
+            <button class="trigger" onclick="nascondiImg()" >Nascondi immagini</button>
+            <button class="trigger" onclick="cambiaColorePrezzo()" >Cambia colore prezzo</button>
+        </div>
+        
+            
+            
+    </main>
+    <footer class="flex-c-c p-y-20">
+        <h2>I<i class="fa-solid fa-heart"></i>Rubo<span class="change-title-name">Shop</span></h2>
+        <address class="p-y-20 pointer" onclick="cambiaIndirizzo()">Via Le mani dagli occhi, 0 - Ovunque (IT)<i class="fa-solid fa-hand-point-left"></i></address>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
